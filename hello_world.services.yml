@@ -5,8 +5,8 @@ services:
 
 
     # Defines a simple service of which requires no parameter for its constructor.
-hello_world.get_articles:
-    class: Drupal\hello_world\HelloWorldService
+hello_world.hello:
+    class: Drupal\hello_world\HelloWorldServices
     arguments: ['@entity.query', '@entity.manager']
 
 
