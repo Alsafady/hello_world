@@ -36,20 +36,20 @@ class HelloBlock extends BlockBase {
     $table = [
        '#type' => 'table',
        '#header' => [
-         $this->t('Day Name'),
          $this->t('Day Number'),
+         $this->t('Day Name'),
        ]
      ];
 
      foreach($days as $day) {
        $table[] = [
-         'day_name' => [
-           '#type' => 'markup',
-           '#markup' => $day['day_name'],
-         ],
          'day_no' => [
            '#type' => 'markup',
            '#markup' => $day['day_no'],
+         ],
+         'day_name' => [
+           '#type' => 'markup',
+           '#markup' => $day['day_name'],
          ],
        ];
      }

@@ -7,7 +7,7 @@ services:
     # Defines a simple service of which requires no parameter for its constructor.
 hello_world.get_articles:
     class: Drupal\hello_world\HelloWorldService
-        arguments: ['@entity.query', '@entity.manager']
+    arguments: ['@entity.query', '@entity.manager']
 
 
 
@@ -16,5 +16,5 @@ hello_world.get_articles:
     #class: Drupal\hello_world\WithModuleHandler
     #arguments: ['@module_handler', '%example.parameter%']
 
-#parameters:
-  #example.parameter: TRUE
+parameters:
+  hello_world.parameter: TRUE
