@@ -1,0 +1,20 @@
+services:
+
+# services for:
+# Accessing the database, Accessing the date, Sending Email, translate the user interface.
+
+
+    # Defines a simple service of which requires no parameter for its constructor.
+hello_world.get_articles:
+    class: Drupal\hello_world\HelloWorldService
+        arguments: ['@entity.query', '@entity.manager']
+
+
+
+  # Defines a service which requires the module_handler for its constructor.
+#hello_world.with_module_handler:
+    #class: Drupal\hello_world\WithModuleHandler
+    #arguments: ['@module_handler', '%example.parameter%']
+
+#parameters:
+  #example.parameter: TRUE

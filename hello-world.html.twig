@@ -1,0 +1,16 @@
+{{ attach_library('hello_world/helo-style') }}
+
+<h4 class="animated slideInRight">{{ title }}</h4>
+
+
+<!-- using random function https://twig.symfony.com/doc/2.x/functions/random.html -->
+
+<ol>
+  {% for item in items %}
+    <li class="animated {{ random(['bounce', 'flash', 'rubberBand', 'shake', 'jello', 'tada', 'bounceIn', 'rollIn']) }}>{{ item.name }}</li>
+  {% endfor %}
+</ol>
+
+
+
+<strong>This is coming from our custom twig file.</strong>

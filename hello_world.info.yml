@@ -4,3 +4,8 @@ package: Custom
 
 type: module
 core: 8.x
+
+#dependencies:
+#  - drupal:link
+#  - drupal:views
+#  - webform:webform (>=8.x-5.x)
