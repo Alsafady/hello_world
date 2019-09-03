@@ -1,65 +1,25 @@
 <?php
-
-namespace Drupal\hello_world;
-
-use Drupal\Core\Entity\Query\QueryFactory;
-use Drupal\Core\Entity\EntityManager;
-
-
+use Drupal\Core\Database\Connection;
 /**
- * Our hello world service class.
+ * Class HelloWorldServices.
  */
-class HelloWorldServices {
-
-
-  protected $say_something;
-   public function __construct() {
-     $this->say_something = 'Hello World!';
-   }
-   public function  sayHello($name = ''){
-     if (empty($name)) {
-       return $this->say_something;
-     }
-     else {
-       return "Hello " . $name . "!";
-     }
-   }
-
-   /*
-
-
-     private $entityQuery;
-     private $entityManager;
-
-     public function __construct(QueryFactory $entityQuery, EntityManager $entityManager) {
-       $this->entityQuery = $entityQuery;
-       $this->entityManager = $entityManager;
-     }
-
-
-    */
-
-
+class HelloWorldServices implements DrupaliseMeInterface {
+  /*
+   * @var \Drupal\Core\Database\Connection $database
+   */
+  protected $database;
 
   /**
-   * Methood for getting Articles.
+   * Constructs a new HelloWorldServices object.
+   * @param \Drupal\Core\Database\Connection $connection
    */
-
-   /*
-  public function getAllArticles() {
-    $articles = ['Hello World!', 'Get All Articles!'];
-
-    return $articles;
+  public function __construct(Connection $connection) {
+    $this->database = $connection;
   }
 
-
-  public function getArticlesAndEQ() {
-    $articleNids = $this->entityQuery->get('node')->condition('type', 'article')->execute();
-
-    return $this->entityManager->getStorage('node')->loadMultiple($articleNids);
+  public function sayHello () {
+    $query = $this->database->query('SELECT nid FROM {node}');
+    $result = $query->fetchAssoc();
+    return $result;
   }
-*/
-
-
-
 }
