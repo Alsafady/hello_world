@@ -1,13 +1,13 @@
-hello_world.hello:
-  path: '/hello'
+hello_world_example.hello_page:
+  path: '/hello_page'
   defaults:
-    _controller: '\Drupal\hello_world\Controller\HelloController::hello'
+    _controller: '\Drupal\hello_world_example\Controller\HelloController::hello_page'
     _title: 'Hello World!'
   requirements:
     _permission: 'access content'
 
 
-hello_world.days:
+hello_world_example.days:
   path: '/days'
   defaults:
     _controller: '\Drupal\hello_world\Controller\HelloController::days'

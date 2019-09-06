@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\hello_world\Controller;
+namespace Drupal\hello_world_example\Controller;
 
 //for t function we must use ControllerBase and extended in the class
 use Drupal\Core\Controller\ControllerBase;
@@ -16,7 +16,7 @@ class HelloController extends ControllerBase {
    * @return array
    *   Return markup array.
    */
-  public function hello() {
+  public function hello_page() {
     return [
       '#type' => 'markup',
       '#markup' => $this->t('Hello, World!'),
@@ -51,7 +51,7 @@ class HelloController extends ControllerBase {
 
 //return in theme (twig) .. this is the best practice.
 return [
-  '#theme' => 'hello_world',
+  '#theme' => 'hello_world_example',
   '#items' => $days,
   '#title' => $this->t('All Days!'),
 ];

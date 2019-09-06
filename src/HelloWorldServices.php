@@ -3,7 +3,7 @@ use Drupal\Core\Database\Connection;
 /**
  * Class HelloWorldServices.
  */
-class HelloWorldServices implements DrupaliseMeInterface {
+class HelloServices implements DrupaliseMeInterface {
   /*
    * @var \Drupal\Core\Database\Connection $database
    */

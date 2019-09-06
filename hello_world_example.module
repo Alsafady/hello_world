@@ -10,7 +10,7 @@
 /**
  * Implements hook_theme().
  */
-function hello_world_theme($existing, $type, $theme, $path) {
+function hello_world_example_theme($existing, $type, $theme, $path) {
 
   return [
     'days' => [
@@ -24,10 +24,10 @@ function hello_world_theme($existing, $type, $theme, $path) {
 /**
  * Implements hook_help().
  */
-function hello_world_help($route_name, RouteMatchInterface $route_match) {
+function hello_world_example_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
     // Main module help for the helloworld module.
-    case 'help.page.hello_world':
+    case 'help.page.hello_world_example':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
       $output .= '<p>' . t('Hello World example module') . '</p>';

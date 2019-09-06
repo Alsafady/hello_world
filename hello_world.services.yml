@@ -1,4 +1,0 @@
-services:
-  hello_world:
-    class: Drupal\hello_world\Services\HelloWorldServices
-    arguments: ['@database']

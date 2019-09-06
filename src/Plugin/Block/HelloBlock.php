@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\hello_world\Plugin\Block;
+namespace Drupal\hello_world_example\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 
@@ -18,7 +18,7 @@ class HelloBlock extends BlockBase {
   /**
    * {@inheritdoc}
    */
-  public function build() {
+  public function hello_block() {
 
 
     $days = [
@@ -56,13 +56,11 @@ class HelloBlock extends BlockBase {
 
      return $table;
 
-
 /*
     return [
       '#markup' => $this->t('Hello, World!'),
     ];
 */
-
 
 
   }
