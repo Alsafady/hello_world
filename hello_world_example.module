@@ -29,8 +29,10 @@ function hello_world_example_help($route_name, RouteMatchInterface $route_match)
     // Main module help for the helloworld module.
     case 'help.page.hello_world_example':
       $output = '';
-      $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('Hello World example module') . '</p>';
+      $output .= '<h3>' . t('Hello World Example') . '</h3>';
+      $output .= '<p>' . t('This is the Help page for "Hello World Example" module.') . '</p>';
+      $output .= '<h3>' . t('Examples') . '</h3>';
+
       return $output;
 
     default:

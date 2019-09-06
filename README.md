@@ -2,6 +2,7 @@
 
 Drupal 8 module example with:
 - Controller.
-- Page.
+- Node Page.
+- Help Page.
 - Block.
 - Services.

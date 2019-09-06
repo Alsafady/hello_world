@@ -41,7 +41,10 @@ class HelloController extends ControllerBase {
       $allDays .= '<li>' . $day['name'] . '</li>';
     }
 
-/* return in markup
+
+//return in markup
+
+/* 
     return [
       '#type' => 'markup',
       '#markup' => '<ol>' . $allDays . '</ol>' . '<h4>' . this->t('is a day.') . '</h4>',
@@ -49,7 +52,11 @@ class HelloController extends ControllerBase {
 */
 
 
+
+
 //return in theme (twig) .. this is the best practice.
+
+/* */
 return [
   '#theme' => 'hello_world_example',
   '#items' => $days,
@@ -59,6 +66,20 @@ return [
 
 
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
