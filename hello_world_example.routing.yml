@@ -10,7 +10,7 @@ hello_world_example.hello_page:
 hello_world_example.days:
   path: '/days'
   defaults:
-    _controller: '\Drupal\hello_world\Controller\HelloController::days'
+    _controller: '\Drupal\hello_world_example\Controller\HelloController::days'
     _title: 'All Days!'
   requirements:
     _permission: 'access content'

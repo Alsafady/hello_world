@@ -1,7 +1,7 @@
-# hello_world_example
+# Hello World Example
 
 Drupal 8 module example with:
-- controller.
-- page.
-- block.
--
+- Controller.
+- Page.
+- Block.
+- Services.
