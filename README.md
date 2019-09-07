@@ -6,3 +6,8 @@ Drupal 8 module example with:
 - Help Page.
 - Block.
 - Services.
+
+
+
+
+composer require drupal/helloworld

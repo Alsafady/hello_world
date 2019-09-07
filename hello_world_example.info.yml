@@ -1,5 +1,5 @@
 name: Hello World Example
-description: Create "Hello World" modules for Drupal 8.
+description: This is "Hello World Example" modules for Drupal 8.
 package: Custom
 
 type: module

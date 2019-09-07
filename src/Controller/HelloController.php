@@ -24,6 +24,23 @@ class HelloController extends ControllerBase {
   }
 
 
+  public function hello_page_admin() {
+    return [
+      '#type' => 'markup',
+      '#markup' => $this->t('Hello, World!'),
+    ];
+  }
+
+
+
+  public function hello_page_with_permission_example() {
+    return [
+      '#type' => 'markup',
+      '#markup' => $this->t('Hello, World!.. This is page for admin users only'),
+    ];
+  }
+
+
 
   public function days() {
     $days = [

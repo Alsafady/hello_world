@@ -7,6 +7,26 @@ hello_world_example.hello_page:
     _permission: 'access content'
 
 
+hello_world_example.hello_page_admin:
+  path: '/admin/hello_page'
+  defaults:
+    _controller: '\Drupal\hello_world_example\Controller\HelloController::hello_page_admin'
+    _title: 'Hello World!'
+  requirements:
+    _permission: 'access content'
+
+
+
+hello_world_example.hello_page_with_permission_example:
+  path: '/hello_page_with_permission_example'
+  defaults:
+    _controller: '\Drupal\hello_world_example\Controller\HelloController::hello_page_with_permission_example'
+    _title: 'Hello World!'
+  requirements:
+    _permission: 'access content'
+
+
+
 hello_world_example.days:
   path: '/days'
   defaults:

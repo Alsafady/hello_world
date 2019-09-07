@@ -1,0 +1,7 @@
+'Guest can see the hello world page':
+  title: "Guest can see the hello world page"
+  descrition: "Guest can see the hello world page"
+
+  'Guest can see the hello world block':
+  title: "Guest can see the hello world block"
+  descrition: "Guest can see the hello world block"
