@@ -1,4 +1,4 @@
 services:
   hello_world_example:
-    class: Drupal\hello_world_example\Services\HelloServices
+    class: Drupal\hello_world_example\HelloServices
     arguments: ['@database']

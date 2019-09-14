@@ -1,4 +1,7 @@
 <?php
+
+namespace Drupal\hello_world_example;
+
 use Drupal\Core\Database\Connection;
 /**
  * Class HelloWorldServices.
