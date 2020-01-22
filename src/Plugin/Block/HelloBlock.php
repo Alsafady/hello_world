@@ -66,3 +66,19 @@ class HelloBlock extends BlockBase {
   }
 
 }
+
+
+
+  /**
+   * {@inheritdoc}
+   *
+   * The return value of the build() method is a renderable array. Returning an
+   * empty array will result in empty block contents. The front end will not
+   * display empty blocks.
+   */
+   public function build() {
+    // We return an empty array on purpose. The block will thus not be rendered
+    // on the site. See BlockExampleTest::testBlockExampleBasic().
+    return [];
+  }
+
